@@ -1,0 +1,9 @@
+POST http://localhost:3001/api/login/
+Content-Type: application/json
+
+{
+	"title": "panssscho",
+	"author": "pedro",
+	"url": "ADDDAS",
+	"likes": 5
+}
