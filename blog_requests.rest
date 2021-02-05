@@ -1,9 +1,10 @@
-POST http://localhost:3001/api/login/
+POST http://localhost:3001/api/blogs/
 Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1vbnRlIiwiaWQiOiI1ZmZhYWMwZTgxODk1ZTE1NzhjZjhiZWQiLCJpYXQiOjE2MTA0MzIxMTJ9.qpHk1QSofkLE0Iv7eHdEz70n-23YN8QVC91tkXFXHuw
 
 {
-	"title": "panssscho",
-	"author": "pedro",
-	"url": "ADDDAS",
+	"title": "asdsssad",
+	"author": "ddaaass",
+	"url": "www.aaaaaaaasd.com",
 	"likes": 5
 }
