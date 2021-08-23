@@ -1,0 +1,13 @@
+JWT claims
+
+jti(identifier): unique id for jsonwebtokens
+
+aud(audience): recipient (the one who validates and accepts the token) a
+
+sub(subject):The Subject ('sub') claim identifies the user or application (in case of client credentials flow) that was authenticated. The Audience ('aud') claim indicates who the token is issued for.
+
+Suppose my client application needs to call service A of behalf of user X.
+
+Typically, my application would communicate with the authorization server to authenticate the user (for example using one of the OAuth2 grant flows) and request access to service X. The authorization server would authenticate the user and ask for consent.
+
+If the user gives consent, the authorization server will issue a JWT token with a subject claim unique for user X and an audience claim indicating service A.

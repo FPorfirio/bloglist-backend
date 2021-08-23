@@ -9,12 +9,14 @@ const userSchema = new mongoose.Schema({
 	},
 	name: String,
 	passwordHash: String,
-	posts: [
-		{
-			type: mongoose.Schema.Types.ObjectId,
-			ref: 'Blog'
-		}
-	]
+	posts: [{
+		type: mongoose.Schema.Types.ObjectId,
+		ref: 'Blog'
+	}],
+	comments: [{
+		type: mongoose.Schema.Types.ObjectId,
+		ref: 'Comment'
+	}]
 })
 
 userSchema.plugin(uniqueValidator)
